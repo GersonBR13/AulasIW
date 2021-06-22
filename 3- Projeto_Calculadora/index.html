@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Eventos</title>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>
+    <h1>Digite nos campos os valores e escolha uma operação:</h1>
+
+    <div id="campos">
+        <input id="input1" type="text" name="" value="" placeholder="Valor 1">
+        <input id="input2" type="text" name="" value="" placeholder="Valor 2">
+    </div>
+    <br>
+
+    <div id="opcs" class="btn-toolbar">
+        <button type="button" name="button" onclick="somaInputs()"> Soma</button>
+        <button type="button" name="button" onclick="subInputs()"> Subtação</button>
+        <button type="button" name="button" onclick="multInputs()"> Multiplicação</button>
+        <button type="button" name="button" onclick="divInputs()"> Divisão</button>
+    </div>
+    
+    <p id="resultado"></p>
+
+    <style>
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+            margin: 6px;
+            text-align: center;
+        }
+        button{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 6px;
+        }
+        #campos{
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #opcs{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #resultado{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</body>
+</html>

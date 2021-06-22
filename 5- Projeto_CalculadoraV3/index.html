@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div id="main" class="box main">
+            <input type="text" id="calc" value="" readonly/>
+            <br>
+            <button type="button" onclick="valor7()">7</button>
+            <button type="button" onclick="valor8()">8</button>
+            <button type="button" onclick="valor9()">9</button>
+            <button type="button" onclick="div()">/</button>
+            <br>
+            <button type="button" onclick="valor4()">4</button>
+            <button type="button" onclick="valor5()">5</button>
+            <button type="button" onclick="valor6()">6</button>
+            <button type="button" onclick="mult()">x</button>
+            <br>
+            <button type="button" onclick="valor1()">1</button>
+            <button type="button" onclick="valor2()">2</button>
+            <button type="button" onclick="valor3()">3</button>
+            <button type="button" onclick="sub()">-</button>
+            <br>
+            <button type="button" onclick="ce()">CE</button>
+            <button type="button" onclick="valor0()">0</button>
+            <button type="button" onclick="soma()">+</button>
+            <button type="button" onclick="result()">=</button>
+        </div>
+        <div id="historico" class="box">
+            <textarea  id="hist" value="" placeholder="Aqui será o histórico..." readonly/></textarea>
+        </div>
+    </div>
+    
+    <style>
+        body{
+            background-color: teal;
+        }
+        button{
+            margin: 5px;
+            width: 70px;
+            height: 80px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(109, 109, 109);
+            border: solid 3px black;
+            border-radius: 10px;
+            font-size: larger;
+            font-weight: bold;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center
+        }
+        #calc{
+            margin: 5px;
+            width: 310px;
+            height: 100px;
+            font-size: larger;
+            border: solid 3px black;
+            border-radius: 10px;
+            background-color: rgb(202, 202, 194);
+            font-weight: bold;
+            text-align: right; 
+        }
+        #hist{
+            margin: 5px;
+            width: 400px;
+            height: 460px;
+            font-size: larger;
+            border: solid 3px black;
+            border-radius: 10px;
+            background-color: rgb(202, 202, 194);
+            font-weight: bold;
+            text-align: center; 
+            position: sticky;
+
+        }
+        #main{
+            border-radius: 3%;
+            display: table;
+            margin-top: 25px;
+            padding: 25px;
+            border: solid 3px black;
+            background-color: rgb(33, 37, 41);
+        }
+        #historico{
+            border-radius: 3%;
+            display: table;
+            margin-top: 25px;
+            padding: 25px;
+            border: solid 3px black;
+            background-color: rgb(33, 37, 41);
+        }
+    </style>
+
+
+</body>
+  <script type="text/javascript" src="scripts/calc.js"></script>
+</html>
